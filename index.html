@@ -2,84 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
-	<style type="text/css">
-	* {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-	.weibo {
-	}
-	.weibo span {
-		padding: 10px;
-		background: #efefef;
-		color: #333;
-		font-size: 14px;
-		display: inline-block;
-	}
-	.weibo ul {
-		width: 100px;
-		background: #fff;
-		border-left: 1px solid #f30;
-		border-right: 1px solid #f30;
-		display: none;
-	}
-	.weibo li {
-		border-bottom: 1px solid #f30;
-		line-height: 30px;
-		text-align: center;
-	}
-	.weibo ul.show {
-		display: block;
-	}
-	</style>
+	<title>Document</title>
 </head>
 <body>
-	<!-- 定义容器元素 -->
-	<div id="app">
-		<div class="weibo" @mouseenter="showUl" @mouseleave="hideUl">
-			<span>博客</span>
-			<!-- 绑定数组 -->
-			<!-- <ul :class="[cls]"> -->
-			<!-- 绑定对象 -->
-			<!-- <ul :class="{
-				show: isShow
-			}"> -->
-			<!-- 绑定字符串 -->
-			<ul :class="cls">
-				<li>博客评论</li>
-				<li>未读提醒</li>
-			</ul>
-		</div>
+	<div>
+		<ul>
+			<li><img src="imgs/tuangou.png"></li>
+			<!-- <li><img src="imgs/tuangou.png"></li>
+			<li><img src="imgs/tuangou.png"></li>
+			<li><img src="imgs/tuangou.png"></li>
+			<li><img src="imgs/tuangou.png"></li> -->
+		</ul>
 	</div>
-<script type="text/javascript" src="vue.js"></script>
-<script type="text/javascript">
-// 实例化vue
-var app = new Vue({
-	// 容器元素
-	el: '#app',
-	// 数据
-	data: {
-		cls: '',
-		isShow: false
-	},
-	// 事件回调函数
-	methods: {
-		// 显示ul
-		showUl: function() {
-			// 通过实例化对象，改变类
-			this.cls = 'show'
-			this.isShow = true;
-		},
-		// 隐藏ul
-		hideUl: function() {
-			// 通过实例化对象，改变类
-			this.cls = ''
-			this.isShow = false;
-		}
-	}
-})
-</script>
+	
 </body>
 </html>
