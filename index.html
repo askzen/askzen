@@ -30,12 +30,15 @@
 			width: 300px;
 		}
 		div .diancan li img {
-			width: 500px;
+			width: 300px;
 		}
 		div .shiguang li img {
 			width: 112%;
 		}
 		div .ionic li img {
+			width: 300px;
+		}
+		div .beiguo li img {
 			width: 300px;
 		}
 		div ul h2 {
@@ -44,6 +47,37 @@
 		div  h2 {
 			text-align: center;
 		}
+		div ul h2 {
+  			color: green;
+  			opacity: 0;
+  			transform: translate(-150px, 0) scale(.3);
+  			animation: leftRight 3s forwards;
+		}
+
+		@keyframes leftRight {
+  			40% {
+    			transform: translate(50px, 0) scale(.7);
+    			opacity: 1;
+    			color: green;
+ 			 }
+  			60% {
+  			  color: blue;
+  			}
+  			80% {
+  			  transform: translate(0) scale(2);
+  			  opacity: 0;
+  			}
+  			100% {
+  			  transform: translate(0) scale(1);
+  			  opacity: 1;
+  			}
+		}
+
+		
+
+ 
+
+
 	</style>
 </head>
 <body>
@@ -58,6 +92,7 @@
 			<h2>外卖图片</h2>
 			<li><img src="imgs/diancan.png" alt=""></li>
 			<li><img src="imgs/diancan1.png" alt=""></li>
+			<li><img src="imgs/waimai3.png" alt=""></li>
 		</ul>
 		<ul class="ionic">
 			<h2>仿网易云音乐图片</h2>
@@ -65,9 +100,15 @@
 			<li><img src="imgs/ionic-2.png" alt=""></li>
 			<li><img src="imgs/ionic-3.png" alt=""></li>
 		</ul>
+		<ul class="beiguo">
+			<h2>掌尚北国 图片</h2>
+			<li><img src="imgs/beiguo.png" alt=""></li>
+			<li><img src="imgs/beiguo2.png" alt=""></li>
+			<li><img src="imgs/beiguo3.png" alt=""></li>
+		</ul>
 		<ul class="shiguang">
 			<h2>时光网 图片</h2>
-			<li><img src="imgs/shiguang.png" alt=""></li>
+			<li><img src="imgs/shiguang.jpg" alt=""></li>
 		</ul>
 		<h2 style="color: orange">已完毕! 谢谢查看</h2>
 	</div>
